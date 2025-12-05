@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Vijay Electronics Unnao</title>
+    <meta name="description"
+        content="Contact Vijay Electronics Unnao for CCTV, Laptop, and TV repair. Call 8090090051 or visit our shop.">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-bolt"></i> VIJAY ELECTRONICS</a>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <div id="google_translate_element"></div>
+                <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button id="mobile-menu-btn" class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 40vh; height: 40vh;">
+        <div class="slide active"
+            style="background-image: url('https://images.unsplash.com/photo-1596524430615-b46475ddff6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+        </div>
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>Get in Touch for Quality Service</p>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div class="contact-container">
+            <div class="contact-form">
+                <div class="section-title" style="text-align: left; margin-bottom: 2rem;">
+                    <h2>Send us a Message</h2>
+                    <p>Fill the form below or message us on WhatsApp.</p>
+                </div>
+                <!-- 
+                     NOTE TO USER: To activate the email form, sign up at https://formspree.io, 
+                     create a new form, and replace 'YOUR_FORM_ID' below with your actual Form ID.
+                -->
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Mobile Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Tell us about your requirement (e.g., CCTV Installation, Laptop Repair...)"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Email</button>
+                </form>
+
+                <div style="margin-top: 2rem; text-align: center;">
+                    <p style="margin-bottom: 1rem;">OR</p>
+                    <button onclick="sendWhatsApp()" class="btn" style="background-color: #25D366; width: 100%;">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <div class="section-title" style="text-align: left; margin-bottom: 2rem;">
+                    <h2>Visit Our Shop</h2>
+                </div>
+                <div class="map-responsive">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.658097072558!2d80.4851!3d26.5412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3c6755555555%3A0x1234567890abcdef!2sUnnao%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                        <i class="fas fa-map-marker-alt"
+                            style="font-size: 1.5rem; color: var(--primary-color); margin-right: 1rem; width: 30px;"></i>
+                        <div>
+                            <h4 style="margin-bottom: 0;">Address</h4>
+                            <p>Unnao, Uttar Pradesh, India</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                        <i class="fas fa-phone-alt"
+                            style="font-size: 1.5rem; color: var(--primary-color); margin-right: 1rem; width: 30px;"></i>
+                        <div>
+                            <h4 style="margin-bottom: 0;">Phone</h4>
+                            <p><a href="tel:8090090051">+91 8090090051</a></p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                        <i class="fas fa-envelope"
+                            style="font-size: 1.5rem; color: var(--primary-color); margin-right: 1rem; width: 30px;"></i>
+                        <div>
+                            <h4 style="margin-bottom: 0;">Email</h4>
+                            <p><a href="mailto:vijayelectronic689@gmail.com">vijayelectronic689@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Vijay Electronics</h4>
+                    <p>Unnao's Sales & Service Expert.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 8090090051</li>
+                        <li><i class="fas fa-envelope"></i> vijayelectronic689@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Unnao, Uttar Pradesh</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Vijay Electronics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,hi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function sendWhatsApp() {
+            var name = document.getElementById("name").value;
+            var message = document.getElementById("message").value;
+            var phone = "918090090051";
+
+            var text = "Hello Vijay Electronics, my name is " + name + ". " + message;
+            var url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(text);
+
+            window.open(url, '_blank').focus();
+        }
+    </script>
+</body>
+
+</html>
